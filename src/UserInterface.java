@@ -78,13 +78,13 @@ class EducationalEndowment extends Endowment {
     @Override
     public double calculateEndowment() {
         double endowment=0;
-        if (Objects.equals(educationalDivision, "School")) {
+        if (Objects.equals(educationalDivision.toLowerCase(), "school")) {
             endowment = 30000;
         }
-        else if (Objects.equals(educationalDivision, "UnderGraduate")) {
+        else if (Objects.equals(educationalDivision.toLowerCase(), "undergraduate")) {
             endowment = 60000;
         }
-        else if (Objects.equals(educationalDivision, "PostGraduate")) {
+        else if (Objects.equals(educationalDivision.toLowerCase(), "postgraduate")) {
             endowment = 90000;
         }
         return endowment;
@@ -150,7 +150,7 @@ public class UserInterface {
         String registrationDate = scanner.next();
         scanner.nextLine();
 
-        if (Objects.equals(endowmentType, "educational")) {
+        if (Objects.equals(endowmentType.toLowerCase(), "educational")) {
 
             System.out.println("Enter Educational Institution");
             String educationalInstitution = scanner.nextLine();
@@ -160,7 +160,7 @@ public class UserInterface {
 
             EducationalEndowment edu = new EducationalEndowment(endowmentID, holderName, endowmentType, registrationDate, educationalInstitution, educationalDivision );
             System.out.println("Endowment Amount "+edu.calculateEndowment());
-        } else if (Objects.equals(endowmentType, "health")) {
+        } else if (Objects.equals(endowmentType.toLowerCase(), "health")) {
 
             System.out.println("Enter Health Care Center");
             String healthCenter = scanner.nextLine();
