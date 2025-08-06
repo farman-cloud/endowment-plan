@@ -11,7 +11,6 @@ This is a Java-based application built to automate the management of endowment p
 - Calculates endowment amount dynamically
 - Demonstrates inheritance through an abstract class `Endowment` and two subclasses
 - Case-insensitive input handling for endowment types
-- Clean, formatted console output
 
 ## Technologies Used
 
@@ -23,7 +22,7 @@ This is a Java-based application built to automate the management of endowment p
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/endowment-plan.git
+   git clone https://github.com/farman-cloud/endowment-plan.git
    cd endowment-plan
 2. Compile the Java Files
    ```bash
@@ -32,3 +31,4 @@ This is a Java-based application built to automate the management of endowment p
    ```bash
    java UserInterface
 
+> 💡 If you're not using IntelliJ IDEA, you can ignore the `.idea/` folder and `.iml` file.
